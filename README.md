@@ -51,7 +51,8 @@ console.log(metricOutput);
 ```
 
 Output:
-```
+
+```prometheus
 # HELP http_requests_total Total number of HTTP requests
 # TYPE http_requests_total counter
 http_requests_total{method="GET",endpoint="/api/users"} 42
@@ -220,6 +221,7 @@ generator.generateFromValidatorData(
 ```
 
 This generates the following Solana-specific metrics:
+
 - `solana_validator_leader_reward_reported_lamports`
 - `solana_validator_priority_fees_lamports`
 - `solana_validator_transaction_fees_total_lamports`
@@ -267,7 +269,8 @@ generator.addMetricWithData(
 ```
 
 Output:
-```
+
+```prometheus
 # HELP test_metric Test metric
 # TYPE test_metric gauge
 test_metric{path="/api/users?filter=active",message="Hello \"World\""} 1

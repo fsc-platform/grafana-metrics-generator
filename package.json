@@ -1,12 +1,28 @@
 {
   "name": "grafana-metrics-generator",
   "version": "1.0.0",
-  "description": "Javascript library for generating metrics data",
-  "main": "grafanaMetricsExample.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A JavaScript library for generating Prometheus-formatted metrics data for Grafana dashboards",
+  "type": "module",
+  "main": "src/grafanaMetricsGenerator.js",
+  "exports": {
+    ".": "./src/grafanaMetricsGenerator.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "grafana",
+    "prometheus",
+    "metrics",
+    "monitoring",
+    "solana",
+    "validator"
+  ],
+  "author": "FSC Platform",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fsc-platform/grafana-metrics-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fsc-platform/grafana-metrics-generator/issues"
+  },
+  "homepage": "https://github.com/fsc-platform/grafana-metrics-generator#readme"
 }
